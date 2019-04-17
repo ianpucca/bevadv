@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  RewriteRule ^inicio/?$ /index.php [NC,L]
+  RewriteRule ^sobre-nos/?$ /sobre.php [NC,L]
+  RewriteRule ^portfolio/?$ /portfolio.php [NC,L]
+  RewriteRule ^contato/?$ /contato.php [NC,L]
+
+  RewriteRule ^/inicio/?$ /index.php [NC,L]
+  RewriteRule ^o-escritorio/?$ /o-escritorio.php [NC,L]
+  RewriteRule ^atuacao/?$ /atuacao.php [NC,L]
+  RewriteRule ^advogados/?$ /advogados.php [NC,L]  
+  RewriteRule ^contato/?$ /contato.php [NC,L]
+</IfModule>
